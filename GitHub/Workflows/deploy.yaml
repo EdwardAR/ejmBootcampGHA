@@ -6,10 +6,11 @@ on:
 
 jobs:
   deploy-copdigofacilito:  
-  runs-on: ubuntu-latest
-  steps:
-    run: |
-      echo "Hola Mundo desde GitHub Actions!"
-      echo "Este es un ejemplo de un workflow simple que se ejecuta en cada push a la rama main."
-      echo "Puedes personalizar este workflow para realizar tareas como pruebas, despliegue, etc."
-      echo "¡Gracias por usar GitHub Actions!"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ejecutar comandos de despliegue
+        run: |
+          echo "Hola Mundo desde GitHub Actions!"
+          echo "Este es un ejemplo de un workflow simple que se ejecuta en cada push a la rama main."
+          echo "Puedes personalizar este workflow para realizar tareas como pruebas, despliegue, etc."
+          echo "¡Gracias por usar GitHub Actions!"
